@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
+import AddTodo from "./pages/AddTodo/AddTodo";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.App}>
+        <header className={styles.header}>
+            <h1>Todo-q</h1>
+            <h4>The world's best todo app</h4>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href={'/'}>Home</a>
+                    <a href={'/add'}>Add todo</a>
+                    <a href={'/list'}>My todo list</a>
+                </li>
+            </ul>
+        </nav>
+        <div className={styles.pageContent}>
+            I am just a home page, nothing to see here
+        </div>
     </div>
   );
 }

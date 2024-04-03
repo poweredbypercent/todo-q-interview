@@ -1,0 +1,40 @@
+.addWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: space-between;
+}
+
+.success {
+    padding: 4px;
+    background-color: aquamarine;
+    color: green;
+}
+
+.formInline {
+    display: flex;
+    gap: 4px;
+}
+
+.textInput {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.button {
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: white;
+    outline: none;
+    box-shadow: none;
+}
+
+.button:hover {
+    background-color: deepskyblue;
+}
