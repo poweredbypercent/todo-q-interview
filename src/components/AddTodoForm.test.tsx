@@ -12,6 +12,10 @@ describe('AddTodoForm', () => {
 
     it("should show a success message when a todo is added", () => {
         render(<AddTodoForm />);
+
+        const todoSuccess = screen.getByTestId('success-alert')
+        expect(todoSuccess).not.toBeInTheDocument();
+
         const todoSubmit = screen.getByTestId('todo-submit');
         todoSubmit.click();
 
