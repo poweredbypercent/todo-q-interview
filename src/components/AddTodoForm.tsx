@@ -4,7 +4,7 @@ import styles from './AddTodoForm.module.css';
 const AddTodoForm = () => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        alert("Todo: Add todo functionality")
+        console.log("Todo: Add todo functionality")
     }
 
     return (
